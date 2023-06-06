@@ -618,7 +618,6 @@ Agora que terminamos de criar as funções que entregam a lógica da área de Ge
     - **`formattedPrice`:** prefixo da moeda Real (`R$`) acrescido do preço do produto (`1.99`, por exemplo), com 1 espaço entre os dados. Além disso, o separador de casas decimais será o ponto (`.`), uma vez que a informação do _data.json_ já se encontra nesse formato. Exemplo: `R$ 10.99`
 
 - Se o produto não for encontrado, sua função irá retornar `null`;
-- A função deve retornar um `array` vazio caso seja chamada **sem parâmetro**.
 
 <details>
 <summary>🔡 Exemplo do formato esperado caso a função encontre um produto</summary> <br />
