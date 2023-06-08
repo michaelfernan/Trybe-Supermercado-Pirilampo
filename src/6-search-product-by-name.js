@@ -1,18 +1,21 @@
 const stockProducts = require('./data.json');
 
-const searchProductByName = () => {
+const searchProductByName = (param) => {
   // Desenvolva seu código dentro dessa função...
-  let nome = 'Arroz';
-  let result;
+  let nome = param;
+  let result = null;
 
   for (let i = 0; i < stockProducts.length; i += 1) {
     if (nome === (stockProducts[i].productName)) {
-      result = stockProducts[i].description;
-      console.log(result);
-    } else {
-      return null;
+      let format = stockProducts[i].price;
+      result = {
+        description: (stockProducts[i].description),
+        formattedPrice: (`R$ ${format}`),
+      };
     }
-  } return result;
+    console.log(result);
+  }
+  return result;
 };
 
 searchProductByName();
