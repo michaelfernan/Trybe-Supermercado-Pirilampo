@@ -13,7 +13,6 @@ const searchProductByName = (param) => {
         formattedPrice: (`R$ ${format}`),
       };
     }
-    console.log(result);
   }
   return result;
 };
